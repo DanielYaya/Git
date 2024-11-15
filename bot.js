@@ -18,8 +18,6 @@ const channelLink = process.env.CHANNEL_LINK;
 const botLink  = process.env.BOT_LINK;
 const defaultReferredBy = process.env.DEFAULT_REFERRED_BY; 
 const genReferral=(userId)=>`${botLink}?start=${userId}`;
-const token = "7661389909:AAGOfGgnZlM9VBTjuOOFsqiR_6zOHifPQCc"; 
-
 const bot = new TelegramBot(token, {
   polling: {
     interval: 300,  // Interval between polling requests (ms)
